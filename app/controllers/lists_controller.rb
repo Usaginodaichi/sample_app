@@ -12,7 +12,7 @@ class ListsController < ApplicationController
     if @list.save
       redirect_to list_path(@list.id)
     else
-      render :new
+      render :index #<= newからindexに変更
     end
   end
 
